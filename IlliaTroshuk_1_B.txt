@@ -1,0 +1,28 @@
+Name: Illia Troshuk
+Date Created: 5/18/2024
+
+Description:
+This program simulates a Magic 8 Ball, a fortune telling toy that provides random responses to yes or no questions. 
+The program creates a file called 8ball_responses.txt with a list of predefined responses. 
+Then, it reads the responses from the file, prompts the user to ask a question, and displays a random response. 
+The user can continue asking questions until they choose to quit (respond no.)
+
+Variables:
+- responses: List to store the Magic 8 Ball responses.
+
+Functions:
+1. create_responses_file(): Creates the file 8ball_responses.txt and writes predefined responses to it.
+2. read_responses(): Reads responses from the file into a list.
+3. magic_8_ball(): Simulates the Magic 8 Ball by prompting the user to ask a question and displaying a random response.
+
+Logical Steps:
+1. Call create_responses_file() to generate the file with predefined responses.
+2. Call read_responses() to read responses from the file into a list.
+3. Start a loop to simulate the Magic 8 Ball:
+    a. Prompt the user to ask a yes/no type question.
+    b. Display a random response from the list of responses.
+    c. Ask the user if they want to ask another question.
+    d. If the user chooses to quit, exit the loop.
+
+COP2373 Repository:
+https://github.com/IlliaTr/COP2373.git
