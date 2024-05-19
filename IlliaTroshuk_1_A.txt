@@ -1,0 +1,28 @@
+Name: Illia Troshuk
+Date Created: 5/18/2024
+
+Description:
+This program performs a cinema ticket pre-sale application. It allows users to pre-purchase cinema tickets with a limit of 4 tickets per buyer and a total of 20 tickets available for sale.
+
+Variables:
+- total_tickets: Stores the total number of tickets available for sale.
+- max_tickets_per_buyer: Stores the maximum number of tickets a buyer can purchase.
+- total_buyers: Accumulator variable to keep track of the total number of buyers.
+
+Functions:
+- pre_sell_tickets(): Main function to manage the pre-sale of cinema tickets.
+
+Logical Steps:
+1. Initialize the total_tickets to 20 and max_tickets_per_buyer to 4.
+2. Initialize total_buyers to 0.
+3. Use a while loop to continue the ticket sale process until all tickets are sold.
+4. Prompt the user for the desired number of tickets.
+5. Validate the input:
+   - Ensure the number of tickets requested is between 1 and 4.
+   - Ensure the number of tickets requested does not exceed the remaining tickets.
+6. If the input is valid, update the total_tickets and increment total_buyers.
+7. Display the remaining number of tickets.
+8. When all tickets are sold, exit the loop and display the total number of buyers.
+
+COP2373 Repository:
+
