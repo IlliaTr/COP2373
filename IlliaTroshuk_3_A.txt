@@ -1,0 +1,33 @@
+Name: Illia Troshuk
+Date Created: 5/30/2024
+
+Description:
+This program allows the user to input a list of their monthly expenses, 
+including the type and amount of each expense. 
+The program then calculates the total expense, the highest expense, 
+and the lowest expense using the `reduce` and lambda functions and finally displays the results.
+
+Variables:
+- expenses: List of tuples to store the type and amount of each expense.
+- expense_type: String to store the type of each expense entered by the user.
+- amount: Float to store the amount of each expense entered by the user.
+- total_expense: Float to store the total amount of expenses.
+- highest_expense: Tuple to store the type and amount of the highest expense.
+- lowest_expense: Tuple to store the type and amount of the lowest expense.
+
+Functions:
+- main(): Handles user input, performs calculations, and displays results.
+
+Logical Steps:
+1. Import the functools library for the reduce function.
+2. Define the main function.
+3. Initialize an empty list to store expenses.
+4. Prompt the user to enter the type and amount of each expense until they type 'f'.
+5. Use the reduce function with a lambda to calculate the total expense.
+6. Use the reduce function with a lambda to find the highest expense.
+7. Use the reduce function with a lambda to find the lowest expense.
+8. Display the total expense, highest expense, and lowest expense with appropriate labels.
+9. Call the main function to run the program.
+
+COP2373 Repository:
+https://github.com/IlliaTr/COP2373.git
