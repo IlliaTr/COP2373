@@ -1,0 +1,33 @@
+Name: Illia Troshuk
+Date Created: 5/25/2024
+
+Description:
+This program checks an email message for common spam keywords and phrases.
+It then assigns a "spam score" based on the number of keywords found, and indicates the likelihood that the message is spam.
+
+Variables:
+- spam_keywords: a list containing common spam keywords and phrases.
+- email_message: a string that holds the email message entered by the user.
+- spam_score: an integer that tracks the number of spam keywords found.
+- spam_words_found: a list that contains the spam keywords found in the email message.
+- likelihood: a string indicating the likelihood that the message is spam.
+
+Functions:
+- main(): the main function that executes the program.
+
+Logical Steps:
+1. Define a list of common spam keywords and phrases.
+2. Ask the user to enter an email message.
+3. Convert the email message to lowercase to ensure case-insensitive matching.
+4. Initialize likelihood string, spam_score to 0 and spam_words_found to an empty list.
+5. Iterate over each keyword in spam_keywords.
+   - Use regular expressions to check if the keyword is in the email message.
+   - If a keyword is found, increment spam_score and add the keyword to spam_words_found.
+6. Determine the likelihood of the email being spam based on spam_score:
+   - High: if spam_score is greater than 6
+   - Moderate: if spam_score is between 3 and 6
+   - Low: if spam_score is 3 or less
+7. Display the spam score, likelihood, and keywords found to the user.
+
+COP2373 Repository:
+https://github.com/IlliaTr/COP2373.git
