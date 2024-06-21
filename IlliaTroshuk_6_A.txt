@@ -1,0 +1,31 @@
+Name: Illia Troshuk
+Date Created: 6/21/2024
+
+Description:
+This program validates user inputs for phone numbers, Social Security numbers (SSNs), and ZIP codes using regular expressions. The user is prompted to enter a phone number, an SSN, and a ZIP code. The program then validates each input against the standard formats and displays whether each input is valid or not.
+
+Variables:
+
+- phone: String to store the user input for the phone number.
+- ssn: String to store the user input for the Social Security number.
+- zip_code: String to store the user input for the ZIP code.
+
+Functions:
+
+- validate_phone_number(phone): Validates if the phone string matches the expected format for a US phone number.
+- validate_ssn(ssn): Validates if the ssn string matches the expected format for a US Social Security number.
+- validate_zip_code(zip_code): Validates if the zip_code string matches the expected format for a US ZIP code.
+- main(): Handles user input, performs validations, and displays results.
+
+Logical Steps:
+
+1. Import the re library for regular expression handling.
+2. Define the function validate_phone_number(phone) to validate US phone number format
+3. Define the function validate_ssn(ssn) to validate US Social Security number format
+4. Define the function validate_zip_code(zip_code) to validate US ZIP code format
+5. Define the main() function prompt the user for a phone number, Social Security number, and ZIP code.
+   - Display the results of user's input whether it was valid or not.
+6. Run the main function
+
+COP2373 Repository:
+https://github.com/IlliaTr/COP2373.git
