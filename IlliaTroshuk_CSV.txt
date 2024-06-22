@@ -1,0 +1,38 @@
+Name: Illia Troshuk
+Date: 6/22/2024
+
+Description:
+This program collects student exam scores, writes them to a CSV file, and reads the file to display the scores in a formatted manner. 
+It involves two primary functions: one for writing scores to the CSV and another for reading and displaying the scores.
+
+Variables:
+- num_students: Integer representing the number of students whose data will be entered.
+- filename: String representing the name of the CSV file where data is stored ('grades.csv').
+- first_name, last_name: Strings for storing the student's first and last names.
+- exam1, exam2, exam3: Integers for storing the scores of three exams.
+
+Functions:
+- write_grades(): This function collects data about students and their exam scores, then writes this data to a CSV file.
+- read_grades(): This function reads the student data from the CSV file and prints it in a formatted manner.
+
+Logical Steps:
+- Define function write_grades:
+    Ask the user for number of students
+    Open 'grades.csv' in write mode
+    Write header row to CSV file
+    For each student in the range of number of students:
+        Prompt user for student's first and last name
+        Prompt user for Exam 1, 2, and 3 scores
+        Write the student data as a new row in the CSV file
+    Close the CSV file
+- Define function read_grades:
+    Open 'grades.csv' in read mode
+    Read header row from the CSV file
+    Display formatted header
+    For each row in the CSV file:
+        Print formatted student data row
+    Close the CSV file
+- Execute the main and read blocks.
+
+COP2373 Repository:
+https://github.com/IlliaTr/COP2373.git
