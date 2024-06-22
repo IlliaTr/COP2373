@@ -1,0 +1,26 @@
+Name: Illia Troshuk
+Date: 6/21/2024
+
+Description:
+This program uses regular expressions (regex) to identify sentence boundaries within a given text. Sentences are split based on common punctuation marks (periods, exclamation marks, and question marks) and validated to handle text structures that include uppercase letters, digits, and abbreviations. The program then prints each detected sentence and the total number of sentences.
+
+Variables:
+
+- pat: Regex pattern string to match sentences.
+- text: The input text from the user which is to be processed.
+- sentences: A list of extracted sentences from the input text.
+
+Functions:
+
+- split_sentences(text): Uses a regular expression to find all sentence-like segments in the text and cleans up to return the sentences without leading or trailing spaces.
+- main(): Prompts the user for a block of text, processes the text, and displays each detected sentence and the total count of sentences.
+
+Logical Steps:
+
+- Prompt user to enter the text.
+- Split the sentences using a regular expression to identify sentence boundaries, considering periods, exclamation marks, and question marks.
+- Clean sentences by stripping leading and trailing spaces from each detected sentence.
+- Display each sentence and the total count of sentences.
+
+COP2373 Repository:
+https://github.com/IlliaTr/COP2373.git
