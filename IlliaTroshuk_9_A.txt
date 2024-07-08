@@ -1,0 +1,51 @@
+Illa Troshuk
+7/7/2024
+
+Description:
+    This program defines a BankAcct class to manage a bank account's state and operations, 
+    including balance management and interest calculation. The class supports adjusting the interest rate, 
+    depositing and withdrawing funds, and calculating the interest based on the number of days. 
+    It includes a test function to demonstrate the use of the class methods.
+
+Variables:
+- self.name: A string representing the account holder's name.
+- self.account_number: A string representing the account number.
+- self.amount: A float representing the current balance of the account.
+- self.interest_rate: A float representing the interest rate of the account.
+
+Functions/Methods:
+- __init__(self, name, account_number, amount=0.0, interest_rate=0.01): Initializes the BankAcct 
+object with the provided name, account_number, amount, and interest_rate.
+- adjust_interest_rate(self, new_rate): Updates the account's interest rate to new_rate.
+- deposit(self, amount): Adds the specified amount to the account's balance, provided the amount is positive.
+- withdraw(self, amount): Deducts the specified amount from the account's balance if it is positive 
+and does not exceed the current balance.
+- balance(self): Returns the current balance of the account.
+- calculate_interest(self, days): Computes the interest earned over a given number of days based on 
+the account's balance and interest rate.
+- __str__(self): Returns a string representation of the account details including the account holder’s name, 
+account number, balance, and interest rate.
+- test_bank_acct(): Demonstrates the functionality of the BankAcct class by creating an account, 
+performing operations, and printing the results.
+
+Logical Steps:
+    Define the BankAcct Class:
+        Initialize name, account_number, amount, and interest_rate with default values.
+        Adjust Interest Rate
+        Deposit: Add amount to self.amount if amount is positive; otherwise, print an error message.
+        Withdraw: Subtract amount from self.amount if amount is positive and does not exceed self.amount; otherwise, print an error message.
+        Balance: Returns self.amount.
+        Calculate Interest: Calculate and return the interest.
+        String Representation: Returns a formatted string showing account details.
+            
+    Define the test_bank_acct Function:
+        Create an Account: Instantiate BankAcct with sample data.
+        Display Initial Details: Print initial account details using the __str__ method.
+        Deposit Funds: Deposit an amount and print the updated balance.
+        Withdraw Funds: Withdraw an amount and print the updated balance.
+        Adjust Interest Rate: Change the interest rate and print the new rate.
+        Calculate Interest: Compute and print interest earned over a specified number of days.
+        Display Final Details: Print final account details.
+
+    Execute the main block:
+        Check to call test_bank_acct when the script is run directly.
