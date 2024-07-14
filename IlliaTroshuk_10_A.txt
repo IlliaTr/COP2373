@@ -1,0 +1,42 @@
+Illia Troshuk
+7/14/2024
+
+Description:
+The Money class inherits from the Decimal class and is designed to represent monetary values in specific currency units. It supports addition, subtraction, and multiplication operations, ensuring that operations are only performed on Money objects with the same currency units.
+
+Variables:
+
+- units: A string representing the currency unit of the money (e.g., 'USD', 'EUR').
+
+Methods:
+
+- _new_(cls, v, units='USD'): Initializes the Money object, inheriting from the Decimal class.
+- _init_(self, v, units='USD'): Sets the currency unit for the Money object.
+- _add_(self, other): Adds two Money objects if they have the same currency units, returns a new Money object.
+- _sub_(self, other): Subtracts one Money object from another if they have the same currency units, returns a new Money object.
+- _mul_(self, multiplier): Multiplies a Money object by an integer, float, or Decimal, returns a new Money object.
+- _str_(self): Returns a string representation of the Money object, including the currency unit.
+
+Logical Steps:
+
+- Initialization:
+  The _new_ method creates a new Money object using the Decimal class.
+  The _init_ method initializes the currency unit for the Money object.
+
+- Addition:
+  The _add_ method checks if both Money objects have the same currency units. If they do, it performs the addition and returns a new Money object.
+
+- Subtraction:
+  The _sub_ method checks if both Money objects have the same currency units. If they do, it performs the subtraction and returns a new Money object.
+
+- Multiplication:
+  The _mul_ method multiplies the Money object by an integer, float, or Decimal, and returns a new Money object.
+
+- String Representation:
+  The _str_ method returns a string in the format amount units, displaying the monetary value and its currency unit.
+
+- Testing:
+  The test_money_operations function creates Money objects and tests the addition, subtraction, and multiplication methods. It also handles cases where operations are attempted between Money objects with different currency units.
+
+COP2373 Repository:
+https://github.com/IlliaTr/COP2373.git

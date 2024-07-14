@@ -1,0 +1,54 @@
+Illia Troshuk
+7/14/2024
+
+Description:
+The BankAcct class represents a bank account, inheriting from the Money class. This class supports various 
+operations such as depositing, withdrawing, adjusting interest rates, and calculating interest. The Money 
+class, inherited from Decimal, provides arithmetic operations and ensures that the currency unit is consistent 
+across operations.
+
+Variables:
+- name: The account holder's name.
+- account_number: The account number.
+- amount: The current balance of the account, stored as a Money object.
+- interest_rate: The interest rate applied to the account.
+
+Methods:
+- __init__(self, name, account_number, amount=0.0, interest_rate=0.01): Initializes the BankAcct object.
+- adjust_interest_rate(self, new_rate): Adjusts the interest rate of the account.
+- deposit(self, amount): Deposits money into the account using the add method from the Money class.
+- withdraw(self, amount): Withdraws money from the account using the subtract method from the Money class.
+- balance(self): Returns the current balance of the account.
+- calculate_interest(self, days): Calculates interest earned over a specified number of days.
+- __str__(self): Returns a string representation of the account details.
+
+Logical Steps:
+- Initialization:
+The __init__ method initializes the account holder's name, account number, initial amount, and interest rate.
+The initial amount is converted to a Money object.
+
+- Adjusting Interest Rate:
+The adjust_interest_rate method sets a new interest rate for the account.
+
+- Depositing Money:
+The deposit method creates a Money object for the deposit amount and adds it to the current balance.
+
+- Withdrawing Money:
+The withdraw method creates a Money object for the withdrawal amount and subtracts it from the current balance.
+
+- Checking Balance:
+The balance method returns the current balance as a Money object.
+
+- Calculating Interest:
+The calculate_interest method calculates the interest earned over a specified number of days, returning a Money 
+object representing the interest.
+
+- String Representation:
+The __str__ method provides a formatted string with the account details.
+
+- Testing:
+The test_bank_acct function creates a BankAcct object and tests various operations including deposit, withdrawal, 
+adjusting interest rates, and calculating interest.
+
+COP2373 Repository:
+https://github.com/IlliaTr/COP2373.git
