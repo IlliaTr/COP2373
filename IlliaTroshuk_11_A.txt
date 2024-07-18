@@ -1,0 +1,48 @@
+Illia Troshuk
+7/18/2024
+
+Description:
+This program simulates a Poker game where the user is dealt a hand of five cards. The user can then choose to replace some of the cards, and the program will deal new cards for the chosen positions.
+
+Variables:
+
+- self.card_list: A list containing card identifiers.
+- self.current_card: An integer representing the index of the current card to be dealt.
+- self.size: An integer representing the total number of cards in the deck.
+- deck: An instance of the Deck class.
+- hand: A list containing the current cards in the player's hand.
+- indices: A list of integers representing the positions of the cards the user wants to replace.
+
+Functions:
+
+- **init**(self, size): Initializes the deck with a specified size, shuffles the cards, and sets the current card index to 0.
+- deal(self): Deals a card from the deck. If all cards have been dealt, reshuffles the deck and resets the current card index.
+- deal_initial_hand(deck): Deals an initial hand of five cards from the deck.
+- replace_cards(deck, hand, indices): Replaces specified cards in the hand with new cards from the deck.
+- get_user_input(): Prompts the user to enter the positions of the cards they want to replace.
+- main(): Main function to execute the game logic. It initializes the deck, deals the initial hand, prompts the user to replace cards, and displays the final hand.
+
+Logical Steps:
+
+- Initialization
+  The program initializes a deck of cards with a specified size. The size is set to 52 for more frequent reshuffling during testing.
+
+- Dealing Initial Hand
+  The program deals an initial hand of five cards from the deck using the deal_initial_hand(deck) function. The dealt cards are displayed to the user with their positions.
+
+- User Input
+  The user is prompted to enter the positions of the cards they want to replace. The positions should be entered as a comma-separated string.
+  The input is processed and converted into a list of integers.
+
+- Replacing Cards
+  The specified cards in the user's hand are replaced with new cards from the deck using the replace_cards(deck, hand, indices) function.
+  The updated hand is displayed to the user.
+
+- Reshuffling Deck
+  If all cards have been dealt from the deck, the deck is reshuffled automatically. The program prints a message indicating that reshuffling has occurred.
+
+- End of Program
+  The program ends after displaying the user's final hand.
+
+COP2373 Repository:
+https://github.com/IlliaTr/COP2373.git

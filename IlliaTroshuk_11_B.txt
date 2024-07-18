@@ -1,0 +1,36 @@
+Illia Troshuk
+7/18/204
+
+Description:
+This program calculates the length of the hypotenuse of a right triangle when provided with the nearest angle (in degrees) and the length of the adjacent side. The program uses trigonometric functions to perform the calculation.
+
+Variables:
+
+- angle_degrees: A float representing the nearest angle in degrees.
+- adjacent_length: A float representing the length of the adjacent side.
+- angle_radians: A float representing the nearest angle in radians (converted from degrees).
+- hypotenuse_length: A float representing the calculated length of the hypotenuse.
+
+Functions:
+
+- get_user_input(): Prompts the user to input the nearest angle in degrees and the length of the adjacent side.
+- calculate_hypotenuse(angle_degrees, adjacent_length): Converts the angle from degrees to radians using the cosine function to calculate the length of the hypotenuse.
+- main(): Main function to execute the program logic. It gets user input, calculates the hypotenuse length, and displays the result.
+
+Logical Steps
+
+- User Input
+  The program prompts the user to enter the nearest angle in degrees and the length of the adjacent side.
+  The user inputs are read and stored as angle_degrees and adjacent_length.
+
+- Convert Angle to Radians
+  The program converts the angle from degrees to radians using the formula: angle_radians = angle_degrees \* (pi / 180).
+
+- Calculate Hypotenuse
+  The program calculates the hypotenuse length using the cosine function: hypotenuse_length = adjacent_length / cos(angle_radians).
+
+- Display Result
+  The program displays the calculated length of the hypotenuse.
+
+COP2373 Repository:
+https://github.com/IlliaTr/COP2373.git
