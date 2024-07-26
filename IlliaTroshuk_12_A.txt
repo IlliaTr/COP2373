@@ -1,0 +1,31 @@
+Illia Troshuk
+7/28/2024
+
+Description
+This program analyzes student grades stored in a CSV file using the numpy library. It performs statistical calculations on the data, including mean, median, standard deviation, minimum, and maximum scores for each exam and overall. The program also determines the number of students who passed or failed each exam and calculates the overall pass percentage.
+
+Variables
+
+- filename: A string that specifies the name of the input CSV file containing the student grades (e.g., 'grades.csv').
+- data: A numpy array that stores the exam scores of students, loaded from the CSV file.
+
+Functions
+
+- load_data(filename): Reads the student grades from the specified CSV file and loads the exam scores into a numpy array.
+- print_first_rows(data, num_rows=5): Prints the first few rows of the dataset to understand its structure.
+- calculate_exam_statistics(data): Calculates and prints statistical metrics for each exam (mean, median, standard deviation, minimum, maximum).
+- calculate_overall_statistics(data): Calculates and prints overall statistics for all exams combined.
+- pass_fail_statistics(data, passing_grade=60): Determines and prints the number of students who passed and failed each exam.
+- overall_pass_percentage(data, passing_grade=60): Calculates and prints the overall pass percentage across all exams.
+
+Logical Steps
+
+- Use load_data to read the exam scores from the CSV file into a numpy array.
+- Call print_first_rows to display a preview of the dataset.
+- Use calculate_exam_statistics to compute and display statistical metrics for each exam.
+- Use calculate_overall_statistics to compute and display statistics for all exams combined.
+- Call pass_fail_statistics to determine and display the number of students passing and failing each exam.
+- Use overall_pass_percentage to compute and display the overall pass percentage.
+
+COP2373 Repository:
+https://github.com/IlliaTr/COP2373.git
